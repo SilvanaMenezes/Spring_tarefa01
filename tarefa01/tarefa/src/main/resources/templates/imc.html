@@ -8,7 +8,12 @@
 </head>
 <body>
 
-<h1>Funciona ai</h1>
+<h1>IMC</h1>
+
+<h2>Resultado do IMC</h2>
+<h3>O resultado do IMC para <span th:text="'altura: ' + ${altura} + 'm e peso: ' + ${peso} + 'kg'"></span></h3>
+<p th:text="'IMC = ' + ${imcFormatado} + ' resultando em um ìndice de Massa Corporal classificado em ' + ${classificacaoDoImc}"></p>
+
 
 </body>
 </html>
