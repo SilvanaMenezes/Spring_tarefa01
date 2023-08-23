@@ -23,8 +23,33 @@ public class HomeController {
         return "saudacao";
     }
 
-    @GetMapping("/media")
-    public String media() {
+    @GetMapping("/media/{prova1}/{prova2}")
+    public String media(@PathVariable String prova1, @PathVariable String prova2, ModelMap model) {
+        model.addAttribute("prova1", prova1);
+        model.addAttribute("prova2", prova2);
+
+        //Fazendo a transformação dos Tipos, convertendo a String em Double (com o ParseDouble)
+        Double prova1Double = Double.parseDouble(prova1);
+        Double prova2Double = Double.parseDouble(prova2);
+        Double media = (prova1Double + prova2Double)/2;
+
+        //Formatando o Resultado da MEDIA para ter 2 casas decimais e Atribuindo o MEDIA para ser exibido
+        String mediaFormatado = String.format("%.2f", media);
+        model.addAttribute("mediaFormatado", mediaFormatado);
+
+        //Criando a variavel que armazenará a Classificação da media
+        String classificacaoMedia = "";
+
+        //Lógica para definição da Classificação
+        if (media >= 6) {
+            classificacaoMedia = "Está a cima da média";
+        } else {
+            classificacaoMedia = "Está a baixo da média";
+        }
+
+        //Atribuindo a Classificação de acordo com o IMC para poder ser exibido
+        model.addAttribute("classificacaoMedia", classificacaoMedia);
+
         return "media";
     }
 

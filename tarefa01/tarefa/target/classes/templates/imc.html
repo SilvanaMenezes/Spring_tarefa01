@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br" xmlns:th="<http://www.thymeleaf.org>">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMC</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMC</title>
 </head>
 <body>
 
@@ -15,9 +15,10 @@
 <h3 th:text="'Seu IMC é de ' + ${imcFormatado} + ' kg/m²'"></h3>
 
 <p>
-    De acordo com a Organização Mundial da Saúde, seu Indice de Massa Corporal esta classificado em
-    <strong th:text="${classificacaoDoImc}"></strong>
+  De acordo com a Organização Mundial da Saúde, seu Indice de Massa Corporal esta classificado em
+  <strong th:text="${classificacaoDoImc}"></strong>
 </p>
+
 
 </body>
 </html>
