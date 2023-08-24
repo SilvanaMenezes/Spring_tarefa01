@@ -9,18 +9,23 @@
 <body>
 
 <header>
-    <h1>Página principal</h1>
+    <h1>Página Principal</h1>
 </header>
 
 <main>
     <section>
         <h2>Integrantes do Grupo</h2>
-        <p>Giuliana Gralha, Larissa Sousa e Silva Menezes</p>
+        <ul>
+            <li>Giuliana Gralha</li>
+            <li>Larissa Sousa</li>
+            <li>Silvana Menezes</li>
+        </ul>
     </section>
 
     <section>
         <h2>Descrição do Projeto</h2>
-        <p>LOREM IPSUM</p>
+        <p>Esse projeto tem o objetivo de utilizar as rotas de uma aplicação Spring Boot
+           para coletar e processar dados com a linguagem de programação Java, através da url do navegador.</p>
     </section>
 
     <hr>
@@ -30,8 +35,26 @@
         <h2>Rotas do Projeto</h2>
 
         <article>
-            <h3>TITULO</h3>
-            <p>LOREM IPSUM</p>
+            <h3>Saudação ao Usuário</h3>
+            <p>Mostra uma mensagem de boas vindas ao usuário
+                e conta a quantidade de letras que tem no nome e sobrenome digitados.
+            </p>
+
+            <ol>
+                <h4>Para receber a mensagem, basta seguir os passos abaixo:</h4>
+                <li>
+                    <p>Digite na Barra de Busca:</p>
+                    <p><code>localhost:4500/saudacao/{seuNome}_{seuSobrenome}</code></p>
+
+                    <p><i>Exemplo:</i><p/>
+                    <p>digite:
+                        <code>localhost:4500/saudacao/Fulano/Camargo</code>
+                    </p>
+
+                    <p><strong>Obs.:</strong> Utilize ( _ )underline para separar ambos os valores. Por favor</p>
+                </li>
+                <li>Pressione <strong>ENTER</strong></li>
+            </ol>
         </article>
 
         <hr>
@@ -39,23 +62,21 @@
 
         <article>
             <h3>Calcular a média de duas Provas</h3>
-            <p>Calculo da média de duas provas bimestais para saber a nota final de um aluno no semestre</p>
+            <p>Calculo da média de duas provas bimestais para saber a nota final de um aluno no semestre.</p>
 
             <ol>
-                <strong>Para Calcular a média das provas  basta seguir os passos abaixo:</strong>
+                <h4>Para Calcular a média das provas  basta seguir os passos abaixo:</h4>
                 <li>
                     <p>Digite na Barra de Busca:</p>
                     <p><code>localhost:4500/media/EscrevaValorDaProva1/EscrevaValorDaProva2</code></p>
 
                     <p><i>Exemplo:</i><p/>
                     <p>
-                        Para a prova1 : 6.4 e prova2: 7.5 m , digite:
+                        Para a prova1: 6.4 e prova2: 7.5 , digite:
                         <code>localhost:4500/media/6.4/7.5</code>
                     </p>
-
                     <p><strong>Obs.:</strong> Para digitar o valor da prova1 e da prova2, utilize o ponto (.) em vez da vírgula (,) e ( / ) para separar ambos os valores. Por favor</p>
                 </li>
-
                 <li>Pressione <strong>ENTER</strong></li>
             </ol>
         </article>
@@ -71,7 +92,7 @@
             </p>
 
             <ol>
-                <strong>Para Calcular o seu IMC basta seguir os passos abaixo:</strong>
+                <h4>Para Calcular o seu IMC basta seguir os passos abaixo:</h4>
                 <li>
                     <p>Digite na Barra de Busca:</p>
                     <p><code>localhost:4500/imc/peso=EscrevaSeuPeso&amp;altura=EscrevaSuaAltura</code></p>
@@ -82,11 +103,10 @@
                         <code>localhost:4500/imc/peso=50.1&amp;altura=1.63</code>
                     </p>
 
-                    <p><strong>Obs.:</strong> Para digitar altura e peso, utilize o ponto (.) em vez da vírgula (,) por favor</p>
+                    <p><strong>Obs.:</strong>
+                        Para digitar altura e peso, utilize o ponto (.) em vez da vírgula (,). Por favor</p>
                 </li>
-
                 <li>Pressione <strong>ENTER</strong></li>
-                <li>Pronto, o resultado será exibido</li>
             </ol>
         </article>
     </section>

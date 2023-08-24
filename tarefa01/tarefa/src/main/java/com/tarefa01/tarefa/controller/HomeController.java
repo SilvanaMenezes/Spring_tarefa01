@@ -20,6 +20,15 @@ public class HomeController {
     public String saudacao(@PathVariable String nome, @PathVariable String sobrenome, ModelMap model) {
         model.addAttribute("nome", nome);
         model.addAttribute("sobrenome", sobrenome);
+
+        //Criando variáveis para contagem de letras
+        int qtdLetrasNome = nome.length();
+        int qtdLetrasSobrenome = sobrenome.length();
+
+        //Exibindo o resultado
+        model.addAttribute("qtdLetrasNome", qtdLetrasNome);
+        model.addAttribute("qtdLetrasSobrenome", qtdLetrasSobrenome);
+
         return "saudacao";
     }
 

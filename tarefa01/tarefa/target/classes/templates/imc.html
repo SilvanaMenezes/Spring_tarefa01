@@ -10,13 +10,15 @@
 
 <h1>IMC</h1>
 
-<h2>O resultado do IMC</h2>
+<p>Esse é o resultado dos valores digitados.</p>
 
-<h3 th:text="'Seu IMC é de ' + ${imcFormatado} + ' kg/m²'"></h3>
+<p>Seu IMC é de
+    <strong th:text="${imcFormatado} + ' kg/m²'"></strong>
+</p>
 
 <p>
   De acordo com a Organização Mundial da Saúde, seu Indice de Massa Corporal esta classificado em
-  <strong th:text="${classificacaoDoImc}"></strong>
+  <strong th:text="${classificacaoDoImc}"></strong>.
 </p>
 
 

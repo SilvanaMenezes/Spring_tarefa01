@@ -10,14 +10,16 @@
 
 <h1>Média</h1>
 
-<h2>O resultado da media</h2>
+<p>Baseando-se que a média de aprovação de um aluno deve ser igual ou maior que <strong>6</strong>
+    para aprovação.</p>
 
-<h3 th:text="'A média é de: ' + ${mediaFormatado}"></h3>
-
-<p>
- O aluno(a): <strong th:text="${classificacaoMedia}"></strong>
+<p>O resultado das notas apresentadas é de:
+    <strong th:text=" ${mediaFormatado}"></strong>
 </p>
 
+<p>O aluno(a):
+    <strong th:text="${classificacaoMedia}"></strong>
+</p>
 
 </body>
 </html>

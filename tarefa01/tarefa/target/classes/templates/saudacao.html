@@ -8,7 +8,21 @@
 </head>
 <body>
 
-<h1>Ola <span th:text="${nome} + ', ' + {sobrenome}"></span></h1>
+<h1>Seja Bem-vindo(a)!</h1>
+
+<h2 th:text="${nome} + ' ' + ${sobrenome}"></h2>
+
+<p>Um fato curioso sobre seu Nome...</p>
+
+<p>A quantidade de letras do seu nome é <strong th:text="${qtdLetrasNome}"></strong>
+  e a quantidade de letras do seu sobrenome é <strong th:text="${qtdLetrasSobrenome}"></strong>.</p>
+
+<p>Legal né?</p>
+
+<h4>Até mais!!!</h4>
+
+
+
 
 </body>
 </html>
